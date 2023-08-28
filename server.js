@@ -20,7 +20,7 @@ app.get("/about", (req, res) => {
     res.sendFile(path.join(initial_path, "about.html"));
 })
 
-app.get("/:blog", (req, res) => {
+app.get("/Schrodinger's-cat-experiment-ankm", (req, res) => {
     res.sendFile(path.join(initial_path, "blog.html"));
 })
 
