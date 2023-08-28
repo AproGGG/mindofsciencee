@@ -21,7 +21,7 @@ app.get("/about", (req, res) => {
 })
 
 
-app.get("/schrodingers-cat-experiment", (req, res) => {
+app.get("/blog", (req, res) => {
     res.sendFile(path.join(initial_path, "blog.html"));
 })
 
