@@ -13,7 +13,7 @@ const createBlog = (blog) => {
     var name;
 
     if(blog.id==`Schrodinger's-cat-experiment-ankm`){
-        name = "blogt";
+        name = "blog";
     } else {
         name = blog.id;
     }
