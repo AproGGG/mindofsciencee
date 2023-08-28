@@ -24,7 +24,7 @@ app.get("/:blog", (req, res) => {
     res.sendFile(path.join(initial_path, "blog.html"));
 })
 
-app.post('/upload', (req, res) => {
+app.post('/uploads', (req, res) => {
     let file = req.files.image;
     let date = new Date();
     let imagename = date.getDate() + date.getTime() + file.name;
