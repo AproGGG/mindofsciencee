@@ -23,7 +23,7 @@ const createBlog = (blog) => {
         <img src="${data.bannerImage}" class="blog-image" alt="">
         <h1 class="blog-title" style="word-wrap: break-word">${data.title.substring(0, 60)}</h1>
         <p class="blog-overview" style="word-wrap: break-word">${data.article.substring(0, 100) + '...'}</p>
-        <a href="/{$name}}" class="btn dark">read</a>
+        <a href="/${name}}" class="btn dark">read</a>
     </div>
     `;
 }
