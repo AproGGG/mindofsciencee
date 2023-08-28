@@ -1,4 +1,5 @@
-let blogId = decodeURI(location.pathname.split("/").pop());
+// let blogId = decodeURI(location.pathname.split("/").pop());
+let blogId = `Schrodinger's-cat-experiment-ankm`
 
 let docRef = db.collection("blogs").doc(blogId);
 
