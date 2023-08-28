@@ -10,6 +10,14 @@ db.collection("blogs").get().then((blogs) => {
 
 const createBlog = (blog) => {
     let data = blog.data();
+    var name;
+
+    if(blog.id==`Schrodinger's-cat-experiment-ankm`){
+        name = "schrodingers-cat";
+    } else {
+        name = blog.id;
+    }
+
     blogSection.innerHTML += `
     <div class="blog-card" style="width: 600px">
         <img src="${data.bannerImage}" class="blog-image" alt="">
