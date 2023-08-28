@@ -20,15 +20,16 @@ app.get("/about", (req, res) => {
     res.sendFile(path.join(initial_path, "about.html"));
 })
 
-app.get("/Schrodinger's-cat-experiment-ankm", (req, res) => {
+
+app.get("/schrodingers-cat-experiment", (req, res) => {
     res.sendFile(path.join(initial_path, "blog.html"));
 })
 
-app.post('/uploads', (req, res) => {
+app.post('/upload', (req, res) => {
     let file = req.files.image;
     let date = new Date();
     let imagename = date.getDate() + date.getTime() + file.name;
-    let path = '/uploads/' + imagename;
+    let path = 'uploads/' + imagename;
 
     file.mv(path, (err, result) => {
         if(err){
